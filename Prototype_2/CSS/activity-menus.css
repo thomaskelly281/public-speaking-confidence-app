@@ -1,0 +1,207 @@
+#screen-items #background {
+  width: 100%;
+  pointer-events: none;
+}
+
+#select-speech-screen {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  display: none;
+}
+
+#select-speech-screen #select-speech-screen-background {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#selected-speech-box {
+  position: absolute;
+  top: 16.4dvh;
+  left: 1.4dvh;
+  width: 92%;
+}
+
+#selected-speech-box img {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+}
+
+#library-box {
+  position: absolute;
+  top: 33dvh;
+  left: 1.4dvh;
+  width: 92%;
+  height: auto;
+}
+
+#library-box #we-shall-fight-box,
+#library-box #to-be-box,
+#library-box #navy-seal-box {
+  max-width: 100%;
+  margin-top: -1dvh;
+}
+
+/* #library-box #we-shall-fight-box {
+  top: 0;
+} */
+
+#library-box #we-shall-fight-box img,
+#library-box #to-be-box img,
+#library-box #navy-seal-box img {
+  max-width: 100%;
+}
+
+#selected-speech-box div img {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+}
+
+#exit-screen {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  display: none;
+}
+
+#exit-screen img {
+  width: 100%;
+  height: 100%;
+}
+
+#exit-screen #exit-yes-button {
+  position: absolute;
+  top: 41.3dvh;
+  left: 8.3dvh;
+}
+
+#exit-screen #exit-yes-button div {
+  height: 6.4dvh;
+  width: 15.2dvh;
+  background: rgba(0, 128, 0, 0.29);
+}
+
+#exit-screen #exit-no-button {
+  position: absolute;
+  top: 41.3dvh;
+  left: 25dvh;
+}
+
+#exit-screen #exit-no-button div {
+  height: 6.4dvh;
+  width: 9.4dvh;
+  background: rgba(0, 128, 0, 0.29);
+}
+
+#screen-items #exit-button,
+#screen-items #select-speech-screen #close-button {
+  position: absolute;
+  top: 6.3dvh;
+  left: 1.4dvh;
+  z-index: 9;
+}
+
+#screen-items #exit-button div,
+#screen-items #select-speech-screen #close-button div {
+  height: 5dvh;
+  width: 5dvh;
+  background: rgba(0, 128, 0, 0.29);
+}
+
+#screen-items #replay-intro-button {
+  position: absolute;
+  top: 6.3dvh;
+  left: 23dvh;
+}
+
+#screen-items #replay-intro-button div {
+  height: 5dvh;
+  width: 14dvh;
+  background: rgba(0, 128, 0, 0.29);
+}
+
+#screen-items #speech-button {
+  position: absolute;
+  top: 73.4dvh;
+  left: 9dvh;
+}
+
+#screen-items #speech-button div {
+  height: 5dvh;
+  width: 25dvh;
+  background: rgba(0, 128, 0, 0.29);
+}
+
+#screen-items #start-button,
+#screen-items #continue-button {
+  position: absolute;
+  top: 80dvh;
+  left: 3dvh;
+}
+
+#screen-items #start-button div,
+#screen-items #continue-button div {
+  height: 8.1dvh;
+  width: 37.3dvh;
+  background: rgba(0, 128, 0, 0.29);
+}
+
+#screen-items #selectedSpeech {
+  position: absolute;
+  font-size: 1.25rem;
+  font-family: "sofia-pro-soft", sans-serif;
+  font-weight: 600;
+  color: #1f1f1f;
+
+  top: 73.3dvh;
+  left: 13.7dvh;
+
+  max-width: 20dvh;
+  overflow: ellipse;
+}
+
+#difficulty-menu-holder {
+  position: absolute;
+  top: 28.3dvh;
+  left: 4.8dvh;
+  height: auto;
+  width: 33.2dvh;
+}
+
+#difficulty-menu-holder img {
+  width: 100%;
+}
+
+#screen-items #difficulty-easy-button {
+  position: absolute;
+  top: 28.2dvh;
+  left: 22.5dvh;
+  height: 4.6dvh;
+  width: 14dvh;
+  background: rgba(123, 128, 0, 0.29);
+}
+
+#screen-items #difficulty-medium-button {
+  position: absolute;
+  top: 33dvh;
+  left: 22.5dvh;
+  height: 4.3dvh;
+  width: 12dvh;
+  background: rgba(59, 194, 225, 0.29);
+}
+
+#screen-items #difficulty-hard-button {
+  position: absolute;
+  top: 37.5dvh;
+  left: 22.5dvh;
+  height: 4.4dvh;
+  width: 12dvh;
+  background: rgba(59, 194, 225, 0.29);
+}

@@ -1,0 +1,124 @@
+#feature-types {
+  position: absolute;
+  top: 8dvh;
+  left: 3dvh;
+  height: 4.5dvh;
+  width: 41dvh;
+  background: green;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  /* Flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+#feature-types::-webkit-scrollbar {
+  display: none;
+}
+
+.feature {
+  width: auto;
+  height: 100%;
+  background: red;
+  border-radius: 3dvh;
+  margin-right: 1dvh;
+  padding-left: 2dvh;
+  padding-right: 2dvh;
+
+  /* Flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.feature p {
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #1f1f1f;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.3dvh;
+}
+
+.feature img {
+  height: 3.5dvh;
+  width: 3.5dvh;
+  margin-right: 1dvh;
+}
+
+#all-features {
+  background: #fff692;
+  box-shadow: inset 0px 0px 0px 0.4dvh #f9f1a3;
+}
+
+#vocality {
+  background: #92ffcb;
+  box-shadow: inset 0px 0px 0px 0.4dvh #80f1bb;
+}
+
+#gestures {
+  background: #a382ff;
+  box-shadow: inset 0px 0px 0px 0.4dvh #b297ff;
+  color: #ffffff;
+}
+
+#audience {
+  background: #b0d4ff;
+  box-shadow: inset 0px 0px 0px 0.4dvh #92c4ff;
+}
+
+.activities-container {
+  position: absolute;
+  left: 3dvh;
+  top: 20dvh;
+  width: 37dvh;
+  height: auto;
+  background: pink;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.activity {
+  margin: 0;
+  margin-bottom: 3dvh;
+}
+
+.activity div {
+  width: 17dvh;
+  height: 17dvh;
+  background: blue;
+  margin: 0;
+  border-radius: 2dvh;
+}
+
+.activity div p {
+  margin: 0;
+}
+
+#above-sea-level-tile {
+  background-image: url("../Images/above-sea-level-tile.jpg");
+  background-size: cover;
+}
+
+#ball-control-tile {
+  background-image: url("../Images/ball-control-tile.png");
+  background-size: cover;
+}
+
+#falling-out-tile {
+  background-image: url("../Images/falling-out-tile.png");
+  background-size: cover;
+}
