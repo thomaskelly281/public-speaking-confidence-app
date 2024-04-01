@@ -1,0 +1,19 @@
+#ball-control-intro-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 43dvh;
+  height: 93;
+  z-index: 6;
+}
+
+#skip-intro {
+  position: absolute;
+  z-index: 7;
+  top: 10dvh;
+  left: 34dvh;
+  font-family: "sofia-pro-soft", sans-serif;
+  font-size: 1.2rem;
+  color: #1f1f1f;
+  text-decoration: underline;
+}
