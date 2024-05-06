@@ -1,0 +1,135 @@
+#ball_control_background_img_explainer,
+#ball_control_complete_img {
+  width: 100%;
+  pointer-events: none;
+}
+
+#ball_control_background_img {
+  position: absolute;
+  top: 20dvh;
+  width: 30dvh;
+}
+
+#screen-items #background-img {
+  position: absolute;
+  top: 10dvh;
+  left: 4dvh;
+  width: 36dvh;
+  pointer-events: none;
+}
+
+#sketch-holder {
+  position: absolute;
+  top: 21dvh;
+  left: 10dvh;
+}
+
+#defaultCanvas0 {
+  position: absolute;
+  top: -8dvh;
+  left: -1dvh;
+  z-index: 500;
+}
+
+#speech-box {
+  position: absolute;
+  top: 14dvh;
+  left: 4dvh;
+  width: 35dvh;
+  z-index: 700;
+}
+
+#speech-box .line {
+  position: absolute;
+  display: none;
+  z-index: 700;
+}
+
+#speech-box p {
+  font-family: "sofia-pro-soft", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  width: 35dvh;
+  color: #ffffff;
+}
+
+#progressBar {
+  position: absolute;
+  left: 0dvh;
+  top: -2dvh;
+  width: 0dvh;
+  height: 6dvh; /* Adjust height as needed */
+  background-color: #ffffff; /* Adjust color as needed */
+  z-index: 9;
+}
+
+.countdown {
+  color: #ffffff;
+}
+/* 
+#end-screen {
+  display: none;
+}
+
+#end-screen img {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+} */
+
+#ball_control_exit_button {
+  position: absolute;
+  top: 8.5dvh;
+  left: 2.5dvh;
+  height: 5.2dvh;
+  width: 5dvh;
+}
+/* 
+#end-screen #exit-button-ending {
+  position: absolute;
+  top: 6.3dvh;
+  left: 1.4dvh;
+  z-index: 9;
+}
+
+#end-screen #exit-button-ending {
+  height: 5dvh;
+  width: 5dvh;
+  /* background: rgba(0, 128, 0, 0.29); */
+
+#end-screen #retry-button {
+  position: absolute;
+  top: 61.9dvh;
+  left: 22.5dvh;
+  z-index: 9;
+}
+
+#end-screen #home-button {
+  position: absolute;
+  top: 61.9dvh;
+  left: 4.8dvh;
+  z-index: 9;
+}
+
+#end-screen #retry-button,
+#end-screen #home-button {
+  height: 7dvh;
+  width: 16dvh;
+  /* background: rgba(0, 128, 0, 0.29); */
+}
+
+#end-screen #next-session-button {
+  position: absolute;
+  top: 80dvh;
+  left: 3dvh;
+  z-index: 9;
+}
+
+#end-screen #next-session-button {
+  height: 8dvh;
+  width: 37.3dvh;
+  /* background: rgba(0, 128, 0, 0.29); */
+}

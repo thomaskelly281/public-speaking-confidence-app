@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recite.</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/gqk5xed.css" />
+
+    <link rel="stylesheet" href="../../../CSS/style.css" />
+    <link rel="stylesheet" href="question_style.css" />
+
+    <script type="module" src="../../../JS/main.js"></script>
+  </head>
+  <body>
+    <section class="container flexbox">
+      <img
+        src="../../../Images/iPhone_15_Pro_Mockup.png"
+        alt="#"
+        id="iphone_mockup"
+      />
+      <div id="screen-items">
+        <img
+          src="../../../Images/exclamations_q2.png"
+          alt="#"
+          id="question_background"
+        />
+
+        <div id="q2-a" class="top-answer answer" onclick="select()">
+          <p>Yes.</p>
+        </div>
+
+        <div id="q2-b" class="bottom-answer answer" onclick="select()">
+          <p>No.</p>
+        </div>
+
+        <!-- <div id="start-button"></div> -->
+
+        <div id="submit-button" class="submit" onclick="submit()">
+          <p>Submit.</p>
+        </div>
+
+        <div
+          id="nextButton"
+          class="nextButton"
+          onclick="window.location='question_3.html'"
+        >
+          <p>Next.</p>
+        </div>
+
+        <img
+          src="../../../Images/exclamations_q2_correct.png"
+          alt="#"
+          id="exclamations_q2_correct"
+          class="ans_img hide"
+        />
+
+        <img
+          src="../../../Images/exclamations_q2_incorrect.png"
+          alt="#"
+          id="exclamations_q2_incorrect"
+          class="ans_img hide"
+        />
+
+        <a
+          href="../../../Main/index.html"
+          rel="noopener noreferrer"
+          id="exit-button"
+        ></a>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="question_2.js"></script>
+</html>

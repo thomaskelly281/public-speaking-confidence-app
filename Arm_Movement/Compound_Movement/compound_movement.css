@@ -1,0 +1,73 @@
+#compound_movement_background_img,
+#compound_movement_complete_img {
+  width: 100%;
+}
+
+#green-box {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 97%;
+  height: 50%;
+  /* background-color: rgba(25, 223, 25, 0.358);
+  border: dashed 10px green; */
+}
+
+#red-box {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  height: 100%;
+  width: 50%;
+  /* background-color: rgba(255, 0, 0, 0.297);
+  border: dashed 10px red; */
+}
+
+#blue-box-1 {
+  position: absolute;
+  top: -10%;
+  left: -28.5%;
+  height: 30%;
+  width: 50%;
+  /* background-color: rgba(19, 74, 255, 0.331); */
+  /* border: dashed 10px blue; */
+}
+
+#blue-box-2 {
+  position: absolute;
+  top: -10%;
+  left: 78.5%;
+  height: 30%;
+  width: 50%;
+  /* background-color: rgba(19, 74, 255, 0.331);
+  border: dashed 10px blue; */
+}
+
+.boundingBox {
+  position: relative;
+  top: 44dvh;
+  left: 10dvh;
+  height: 40dvh;
+  width: 25dvh;
+  background-color: #e13700ad;
+  border-radius: 2dvh;
+  border: 0.5dvh solid #ff7c51;
+}
+
+#target_left {
+  position: absolute;
+  z-index: 400;
+  height: 9dvh;
+  top: 47dvh;
+  left: 1dvh;
+  opacity: 0.4;
+}
+
+#target_right {
+  position: absolute;
+  z-index: 400;
+  height: 9dvh;
+  top: 47dvh;
+  right: 0.8dvh;
+  opacity: 0.4;
+}

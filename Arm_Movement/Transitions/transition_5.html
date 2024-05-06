@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recite.</title>
+
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link rel="stylesheet" href="transitions.css" />
+
+    <script type="module" src="../../JS/main.js"></script>
+  </head>
+  <body>
+    <section class="container flexbox">
+      <img
+        src="../../Images/iPhone_15_Pro_Mockup.png"
+        alt="#"
+        id="iphone_mockup"
+      />
+      <div id="screen-items">
+        <img
+          src="../../Images/journey_background.png"
+          alt="#"
+          id="journey_background"
+        />
+
+        <img
+          src="../../Images/journey_timeline.png"
+          alt="#"
+          id="journey_timeline"
+          class="transition_5"
+        />
+
+        <img
+          src="../../Images/timeline_header_activity_4.png"
+          alt="#"
+          class="header_disappear_4"
+        />
+
+        <img
+          src="../../Images/bubble_compound_movement.png"
+          alt="#"
+          class="bubble_disappear_4"
+        />
+
+        <div id="green_hue_changer"></div>
+
+        <a
+          href="../../Main/index.html"
+          rel="noopener noreferrer"
+          id="exit-button"
+        ></a>
+      </div>
+    </section>
+  </body>
+  <script>
+    setInterval(() => {
+      window.location.replace("../arm_movement_complete.html");
+    }, 8000);
+  </script>
+</html>

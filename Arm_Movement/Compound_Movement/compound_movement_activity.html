@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recite.</title>
+
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link rel="stylesheet" href="compound_movement.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gqk5xed.css" />
+
+    <script type="module" src="../../JS/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+  </head>
+  <body>
+    <section class="container flexbox">
+      <img
+        src="../../Images/iPhone_15_Pro_Mockup.png"
+        alt="#"
+        id="iphone_mockup"
+      />
+      <div id="screen-items">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+
+        <div id="progressBar"></div>
+
+        <div id="green-box">
+          <div id="red-box"></div>
+          <div id="blue-box-1"></div>
+          <div id="blue-box-2"></div>
+        </div>
+
+        <div class="boundingBox" id="boundingBox"></div>
+
+        <img src="../../Images/target.png" alt="#" id="target_left" />
+        <img src="../../Images/target.png" alt="#" id="target_right" />
+      </div>
+    </section>
+  </body>
+  <script src="compound_movement.js"></script>
+</html>

@@ -1,0 +1,23 @@
+#exclamations_background_img,
+#exclamations_complete_img {
+  width: 100%;
+}
+
+#targetsHit {
+  display: block;
+  position: absolute;
+  top: 15dvh;
+  left: 27dvh;
+  height: 7dvh;
+  z-index: 40;
+}
+
+#targetsHit p {
+  position: absolute;
+  top: 0.2dvh;
+  left: 6.9dvh;
+  font-family: "sofia-pro-soft", sans-serif;
+  font-size: 3dvh;
+  line-height: 0dvh;
+  font-weight: 500;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recite.</title>
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="ball_control.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gqk5xed.css" />
+
+    <script type="module" src="../JS/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js"></script>
+
+  </head>
+  <body style="overflow: hidden;">
+    <section class="container flexbox">
+      <img
+        src="../Images/iPhone_15_Pro_Mockup.png"
+        alt="#"
+        id="iphone_mockup"
+      />
+      <div id="screen-items">
+        <main id="screen-prototype" class="container"> 
+            <img
+                src="../Images/ball_control_background.png"
+                alt="#"
+                id="background-img"
+            />
+            <!-- <div id="end-screen">
+                <img src="../Images/Ball Control Ending Screen.png" alt="#" />
+                <a href="#" id="exit-button-ending" rel="noopener"><div></div></a>
+                <a href="ball-control-easy.html" id="retry-button" rel="noopener"
+                ><div></div
+                ></a>
+                <a href="start-home.html" id="home-button" rel="noopener"
+                ><div></div
+                ></a>
+                <a href="#" id="next-session-button" rel="noopener"><div></div></a>
+            </div> -->
+    
+            <div id="progressBar"></div>
+    
+            <a href="../Main/index.html" id="ball_control_exit_button" rel="noopener"><div></div></a>
+    
+            <div id="speech-box">
+                <div id="toBeLines">
+                <p class="line">
+                    Read everything from now <span class="countdown">out loud!</span>
+                </p>
+    
+                <p class="line goal"></p>
+                <p class="line">Starting in... <span class="countdown">3</span></p>
+                <p class="line">Starting in... <span class="countdown">2</span></p>
+                <p class="line">Starting in... <span class="countdown">1</span></p>
+                <p class="line countdown" style="text-align: center">GO</p>
+    
+                <p class="line">To be, or not to be</p>
+                <p class="line">that is the question.</p>
+                <p class="line">Whether tis' nobler in the mind to suffer</p>
+                <p class="line">the slings and arrows of outrageous fortune</p>
+                <p class="line">Or to take arms against a sea of troubles</p>
+                <p class="line">And by opposing end them.</p>
+                <p class="line">To die—to sleep,</p>
+                <p class="line">No more; and by a sleep to say we end</p>
+                <p class="line">The heart-ache and the thousand natural shocks</p>
+                <p class="line">That flesh is heir to: 'tis a consummation</p>
+                <p class="line">Devoutly to be wish'd.</p>
+                <p class="line">To die, to sleep;</p>
+                <p class="line">
+                    To sleep, perchance to dream—ay, there's the rub:
+                </p>
+                <p class="line">For in that sleep of death what dreams may come,</p>
+                <p class="line">When we have shuffled off this mortal coil,</p>
+                <p class="line">Must give us pause—there's the respect</p>
+                <p class="line">That makes calamity of so long life.</p>
+                </div>
+            <div id="sketch-holder"></div>
+            </div>
+    </section>
+  </body>
+  <script src="ball_control.js"></script>
+</html>

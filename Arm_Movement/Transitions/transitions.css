@@ -1,0 +1,276 @@
+#journey_background {
+  width: 100%;
+  pointer-events: none;
+}
+
+#journey_timeline {
+  pointer-events: none;
+  position: absolute;
+  top: 50dvh;
+  left: 19dvh;
+  height: 7dvh;
+}
+
+.transition_1 {
+  animation: transition_1 8s forwards ease-in-out;
+}
+
+@keyframes transition_1 {
+  0% {
+    left: 19dvh;
+  }
+  20% {
+    left: 19dvh;
+  }
+  55% {
+    left: -145dvh;
+  }
+  65% {
+    left: -145dvh;
+  }
+  100% {
+    left: 19dvh;
+  }
+}
+
+.header {
+  pointer-events: none;
+  position: absolute;
+  top: 17dvh;
+  left: 6dvh;
+  height: 9dvh;
+  animation: appear 10s forwards ease-out;
+}
+
+.bubble {
+  pointer-events: none;
+  position: absolute;
+  top: 39dvh;
+  left: 6.8dvh;
+  height: 11dvh;
+  animation: appear 10s forwards ease-out, float 4s ease-in-out infinite;
+}
+
+.header_2 {
+  pointer-events: none;
+  position: absolute;
+  top: 17dvh;
+  left: 6dvh;
+  height: 9dvh;
+  animation: appear 9s forwards ease-out;
+}
+
+.bubble_2 {
+  pointer-events: none;
+  position: absolute;
+  top: 39dvh;
+  left: 10.6dvh;
+  height: 11dvh;
+  animation: appear 9s forwards ease-out, float 4s ease-in-out infinite;
+}
+
+.header_disappear {
+  pointer-events: none;
+  position: absolute;
+  top: 17dvh;
+  left: 6dvh;
+  height: 9dvh;
+  animation: disappear 3s forwards ease-out;
+}
+
+.bubble_disappear {
+  pointer-events: none;
+  position: absolute;
+  top: 39dvh;
+  left: 6.8dvh;
+  height: 11dvh;
+  animation: disappear 3s forwards ease-out, float 4s ease-in-out infinite;
+}
+
+.bubble_disappear_4 {
+  pointer-events: none;
+  position: absolute;
+  top: 39dvh;
+  left: 9.8dvh;
+  height: 11dvh;
+  animation: disappear 1s forwards ease-out, float 4s ease-in-out infinite;
+}
+
+.header_disappear_4 {
+  pointer-events: none;
+  position: absolute;
+  top: 17dvh;
+  left: 6dvh;
+  height: 9dvh;
+  animation: disappear 1s forwards ease-out;
+}
+
+.bubble_disappear_2 {
+  pointer-events: none;
+  position: absolute;
+  top: 39dvh;
+  left: 10.6dvh;
+  height: 11dvh;
+  animation: disappear 3s forwards ease-out, float 4s ease-in-out infinite;
+}
+
+.bubble_disappear_3 {
+  pointer-events: none;
+  position: absolute;
+  top: 39dvh;
+  left: 8dvh;
+  height: 11dvh;
+  animation: disappear 3s forwards ease-out, float 4s ease-in-out infinite;
+}
+
+.bubble_3 {
+  pointer-events: none;
+  position: absolute;
+  top: 39dvh;
+  left: 8dvh;
+  height: 11dvh;
+  animation: appear 9s forwards ease-out, float 4s ease-in-out infinite;
+}
+
+.bubble_4 {
+  pointer-events: none;
+  position: absolute;
+  top: 39dvh;
+  left: 10dvh;
+  height: 11dvh;
+  animation: appear 9s forwards ease-out, float 4s ease-in-out infinite;
+}
+
+.bubble_5 {
+  pointer-events: none;
+  position: absolute;
+  top: 39dvh;
+  left: 10dvh;
+  height: 11dvh;
+  animation: disappear 3s forwards ease-out, float 4s ease-in-out infinite;
+}
+
+.transition_2 {
+  animation: transition_2 7s forwards ease-in-out;
+}
+
+@keyframes transition_2 {
+  0% {
+    left: 19dvh;
+  }
+  60% {
+    left: 19dvh;
+  }
+  100% {
+    left: -35.5dvh;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.appear {
+  animation: appear 5s forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  90% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0dvh);
+  }
+  50% {
+    transform: translateY(-1dvh);
+  }
+  100% {
+    transform: translateY(0dvh);
+  }
+}
+
+.transition_3 {
+  animation: transition_3 7s forwards ease-in-out;
+}
+
+@keyframes transition_3 {
+  0% {
+    left: -35.5dvh;
+  }
+  60% {
+    left: -35.5dvh;
+  }
+  100% {
+    left: -90.8dvh;
+  }
+}
+
+.transition_4 {
+  animation: transition_4 7s forwards ease-in-out;
+}
+
+@keyframes transition_4 {
+  0% {
+    left: -90.8dvh;
+  }
+  60% {
+    left: -90.8dvh;
+  }
+  100% {
+    left: -146.6dvh;
+  }
+}
+
+.transition_5 {
+  animation: transition_5 7s forwards ease-in-out;
+}
+
+@keyframes transition_5 {
+  0% {
+    left: -146.6dvh;
+  }
+  20% {
+    left: -146.6dvh;
+  }
+  100% {
+    left: 19dvh;
+  }
+}
+
+#green_hue_changer {
+  pointer-events: none;
+  position: absolute;
+  top: 44dvh;
+  height: 15dvh;
+  background: green;
+  mix-blend-mode: hue;
+  animation: hue_changer 7s forwards ease-in-out;
+}
+
+@keyframes hue_changer {
+  0% {
+    left: 60dvh;
+    width: 0%;
+  }
+  100% {
+    left: 0dvh;
+    width: 100%;
+  }
+}

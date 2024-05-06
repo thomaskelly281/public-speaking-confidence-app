@@ -1,0 +1,40 @@
+#question_background {
+  width: 100%;
+  pointer-events: none;
+}
+
+.ans_img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.hide {
+  display: none;
+}
+
+#questions_complete_background_img {
+  width: 100%;
+  pointer-events: none;
+}
+
+#bubble_bb_practice {
+  position: absolute;
+  height: 12dvh;
+  bottom: 13dvh;
+  left: 8dvh;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0dvh);
+  }
+  50% {
+    transform: translateY(-1dvh);
+  }
+  100% {
+    transform: translateY(0dvh);
+  }
+}

@@ -1,0 +1,41 @@
+#bounding_box_background_img,
+#bounding_box_complete_img {
+  width: 100%;
+}
+
+.boundingBox {
+  position: relative;
+  top: 34dvh;
+  left: 10dvh;
+  height: 40dvh;
+  width: 25dvh;
+  background-color: #b397ffad;
+  border-radius: 2dvh;
+  border: 0.5dvh solid #700ef0;
+}
+
+.boundingBoxLabel {
+  position: relative;
+  top: 30dvh;
+  left: 10dvh;
+  height: 15dvh;
+  width: 25dvh;
+  background-color: #ffffffe1;
+  border-radius: 2dvh;
+  border: 0.5dvh solid #700ef0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.boundingBoxLabel p {
+  text-align: center;
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #1f1f1f;
+  font-weight: 600;
+  font-size: 6dvh;
+}

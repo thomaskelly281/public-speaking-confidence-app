@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recite.</title>
+
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gqk5xed.css" />
+
+    <script type="module" src="../../JS/main.js"></script>
+    <script type="module" src="../../JS/framing.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+  </head>
+  <body>
+    <section class="container flexbox">
+      <img
+        src="../../Images/iPhone_15_Pro_Mockup.png"
+        alt="#"
+        id="iphone_mockup"
+      />
+      <div id="screen-items">
+        <!-- Video element for displaying webcam video -->
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+
+        <img
+          src="../../Images/framing_stand_back.png"
+          alt="#"
+          id="framingStandBack"
+        />
+        <img
+          src="../../Images/framing_perfect.png"
+          alt="#"
+          id="framingPerfect"
+        />
+      </div>
+    </section>
+  </body>
+
+  <script>
+    setInterval(() => {
+      window.location.replace("exclamations_activity.html");
+    }, 5000);
+  </script>
+</html>

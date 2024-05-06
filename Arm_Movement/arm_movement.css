@@ -1,0 +1,5 @@
+#arm_movement_background_img,
+#arm_movement_complete_img {
+  width: 100%;
+  pointer-events: none;
+}
