@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recite.</title>
+
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link rel="stylesheet" href="journey_questions.css" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/gqk5xed.css" />
+
+    <script type="module" src="../../JS/main.js"></script>
+    <script type="module" src="question_3.js"></script>
+  </head>
+  <body>
+    <section class="container flexbox">
+      <img
+        src="../../Images/iPhone_15_Pro_Mockup.png"
+        alt="#"
+        id="iphone_mockup"
+      />
+      <div id="screen-items">
+        <img
+          src="../../Images/journey_q_backgrounds/q3_background.png"
+          alt="#"
+          class="background"
+        />
+
+        <div>
+          <a href="../../Main/speeches.html" id="jq_exit"></a>
+          <div onclick="history.back()" id="jq_back"></div>
+        </div>
+
+        <div class="question-holder">
+          <button class="jq-answer" onclick="select()" id="q3-a">
+            <p>Yes.</p>
+          </button>
+          <button class="jq-answer" onclick="select()" id="q3-b">
+            <p>No.</p>
+          </button>
+          <button class="jq-answer" onclick="select()" id="q3-c">
+            <p>Not Yet.</p>
+          </button>
+        </div>
+
+        <button class="submit" id="submit-button" onclick="submit()">
+          <p>Submit.</p>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

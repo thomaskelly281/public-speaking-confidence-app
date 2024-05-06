@@ -1,0 +1,32 @@
+.background {
+  width: 100%;
+  pointer-events: none;
+}
+
+.loader {
+  position: absolute;
+  top: 39.3dvh;
+  left: 15.2dvh;
+  width: 14dvh;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #ff7c51 94%, #0000) top / 8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #ff7c51);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+  z-index: 700;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #ff7c51 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #ff7c51);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+  z-index: 700;
+}
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}

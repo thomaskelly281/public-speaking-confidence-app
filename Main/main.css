@@ -1,0 +1,45 @@
+#home_background_img,
+#activities_background_img,
+#speeches_background_img {
+  width: 100%;
+  pointer-events: none;
+}
+
+#journey_cta {
+  position: absolute;
+  top: 61.4dvh;
+  width: 34.4dvh;
+  height: 7.4dvh;
+  z-index: 6000;
+  left: 5dvh;
+}
+
+#recommended_activity_start_button {
+  width: 33.8dvh;
+  position: absolute;
+  height: 6.8dvh;
+  left: 5.4dvh;
+  top: 34.8dvh;
+}
+
+#speeches_cta {
+  position: absolute;
+  width: 38.6dvh;
+  bottom: 14dvh;
+  left: 3dvh;
+}
+
+.activity_box_holder {
+  width: 38.4dvh;
+  position: absolute;
+  top: 65.2dvh;
+  left: 3dvh;
+  height: auto;
+}
+
+.activity_box_holder a {
+  width: 100%;
+  height: 21dvh;
+  margin-bottom: 2dvh;
+  display: block;
+}

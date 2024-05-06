@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* Container to centre the iPhone Mockup */
+  width: 99vw;
+  height: 98dvh;
+  padding-top: 1dvh;
+  /* background-color: rgb(215, 255, 252); */
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+#iphone_mockup {
+  pointer-events: none;
+  height: 98dvh;
+  z-index: 100;
+}
+
+#screen-items {
+  position: absolute;
+  top: 2.2dvh;
+  height: 95.6dvh;
+  width: 44.4dvh;
+  /* background-color: red; */
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+#navbar-holder {
+  position: absolute;
+  bottom: 1.6dvh;
+  width: 44.4dvh;
+  height: auto;
+}
+
+#navbar {
+  width: 100%;
+}
+
+#nav-home-link,
+#nav-activities-link,
+#nav-speeches-link {
+  position: absolute;
+  top: 2.4dvh;
+  height: 6.4dvh;
+}
+
+#nav-home-link {
+  left: 6dvh;
+  width: 7dvh;
+}
+
+#nav-activities-link {
+  left: 17dvh;
+  width: 9dvh;
+}
+
+#nav-speeches-link {
+  left: 29.5dvh;
+  width: 9dvh;
+}
+
+#exit-button {
+  position: absolute;
+  top: 7dvh;
+  left: 2dvh;
+  height: 4.2dvh;
+  width: 4dvh;
+}
+
+#start-button {
+  position: absolute;
+  top: 83.4dvh;
+  left: 2.8dvh;
+  height: 8dvh;
+  width: 38.8dvh;
+}
+
+#select_activity {
+  position: absolute;
+  top: 34.4dvh;
+  left: 4.8dvh;
+  height: 29dvh;
+  width: 35.8dvh;
+}
+
+/* Questionnaire Styling */
+
+.answer {
+  width: 34dvh;
+  height: 7dvh;
+  left: 5dvh;
+  background-color: #ffffff;
+  border: 0.5dvh solid #8b8b8b;
+  border-radius: 2dvh;
+  filter: drop-shadow(0 0.5dvh #616161);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.answer p,
+.submit p {
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #808080;
+  font-weight: 600;
+  font-size: 2.2dvh;
+}
+
+.submit_selected p {
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #e13700;
+
+  font-weight: 600;
+  font-size: 2.2dvh;
+}
+
+.top-answer {
+  position: absolute;
+  top: 44dvh;
+}
+
+.bottom-answer {
+  position: absolute;
+  top: 55dvh;
+}
+
+.submit {
+  width: 38dvh;
+  height: 7dvh;
+  left: 3dvh;
+  background-color: #ffffff;
+  border: 0.5dvh solid #8b8b8b;
+  border-radius: 2dvh;
+  filter: drop-shadow(0 0.5dvh #616161);
+  position: absolute;
+  top: 83.4dvh;
+  z-index: 200;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.submit_selected {
+  width: 38dvh;
+  height: 7dvh;
+  left: 3dvh;
+  background-color: #ffffff;
+  border: 0.5dvh solid #ff7c51;
+  border-radius: 2dvh;
+  filter: drop-shadow(0 0.5dvh #e13700);
+  position: absolute;
+  top: 83.4dvh;
+  z-index: 200;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.nextButton {
+  width: 38dvh;
+  height: 7dvh;
+  left: 3dvh;
+  background-color: #f3f0f9;
+  border: 0.5dvh solid #b297ff;
+  border-radius: 2dvh;
+  filter: drop-shadow(0 0.5dvh #825cef);
+  position: absolute;
+  top: 83.4dvh;
+  z-index: 200;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+
+  display: none;
+}
+
+.nextButton p {
+  font-family: "sofia-pro-soft", sans-serif;
+  font-weight: 600;
+  font-size: 2.2dvh;
+  color: #700ef0;
+  text-align: center;
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* left: -100%; */
+  top: 0;
+}
+
+#video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* left: -100%; */
+  top: 0;
+}
+
+video,
+canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will cover the area of the box without distorting the aspect ratio */
+  transform: scaleX(-1);
+}
+
+#progressBar {
+  background-color: #fff;
+  height: 5dvh;
+  position: absolute;
+  top: 0dvh;
+  width: 0%;
+  transition: width 0.5s linear;
+}
+
+#framingStandBack,
+#framingPerfect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+#framingPerfect {
+  display: none;
+}
+
+#resetProgress {
+  width: 3dvh;
+  height: 2dvh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
