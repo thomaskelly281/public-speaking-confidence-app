@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* Container to centre the iPhone Mockup */
+  width: 99vw;
+  height: 98dvh;
+  padding-top: 1dvh;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+h1 {
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #383838;
+  font-weight: 600;
+  font-size: 8dvh;
+  margin: 1dvh 0;
+}
+
+h2 {
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #383838;
+  font-weight: 400;
+  font-size: 2.4dvh;
+  margin: 1dvh 0;
+}
+.title_div {
+  margin-bottom: 16dvh;
+}
+
+#prototype_button {
+  width: 40dvh;
+  border: 0.5dvh solid #5c5c5c;
+  height: 8dvh;
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #383838;
+  font-weight: 600;
+  font-size: 2.2dvh;
+  border-radius: 2dvh;
+  filter: drop-shadow(0 0.5dvh #313131);
+  background-color: #ffffff;
+  border: 0.3dvh solid #5c5c5c;
+  margin-bottom: 5dvh;
+}
+
+#prototype_button:hover,
+#case_study_button:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+}
+
+#case_study_button {
+  width: 34dvh;
+  height: 8dvh;
+
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #ffffff;
+  background-color: #363636;
+  font-weight: 600;
+  font-size: 2.2dvh;
+  border-radius: 2dvh;
+  filter: drop-shadow(0 0.5dvh #313131);
+  border: 0.3dvh solid #7f7f7f;
+}
