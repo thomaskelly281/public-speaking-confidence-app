@@ -4,6 +4,9 @@ const framingPerfect = document.getElementById("framingPerfect");
 setInterval(() => {
     framingPerfect.style.display = "block";
     framingStandBack.style.display = "none";
+
+    var audio = new Audio('framing_perfect.mp3');
+    audio.play();
 }, 4000); // Change frame in 4 seconds
 
 ////////////////////////////////////////////////////////
@@ -41,7 +44,7 @@ canvasElement.width = videoWidth;
 canvasElement.height = videoHeight;
 
 
-videoElement.addEventListener('loadedmetadata', function() {
+videoElement.addEventListener('loadedmetadata', function () {
     // These lines may be adjusted or removed depending on the desired behavior
     canvasElement.width = videoElement.videoWidth;
     canvasElement.height = videoElement.videoHeight;

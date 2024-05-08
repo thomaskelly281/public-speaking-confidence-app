@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recite.</title>
+
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link rel="stylesheet" href="bounding_box.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gqk5xed.css" />
+
+    <script type="module" src="../../JS/main.js"></script>
+  </head>
+  <body>
+    <section class="container flexbox">
+      <img
+        src="../../Images/iPhone_15_Pro_Mockup.png"
+        alt="#"
+        id="iphone_mockup"
+      />
+      <div id="screen-items">
+        <img
+          src="../../Images/explainer_background.png"
+          alt="#"
+          id="bounding_box_background_img"
+        />
+
+        <video src="../../Video/bounding_box_video.mp4" id="intro_vid" autoplay mute loop></video>
+        <audio src="../../Audio/bounding_box_intro.mp3" autoplay></audio>
+
+        <a
+          href="../../Main/index.html"
+          rel="noopener noreferrer"
+          id="exit-button"
+        ></a>
+
+        <a
+          href="Questionnaire/question_1.html"
+          rel="noopener noreferrer"
+          id="start-button"
+        ></a>
+      </div>
+    </section>
+  </body>
+  <script>
+    setInterval(() => {
+      window.location.replace("Questionnaire/question_1.html");
+    }, 37000);
+  </script>
+</html>

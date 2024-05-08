@@ -2,3 +2,12 @@
 #fluid_arm_movement_complete_img {
   width: 100%;
 }
+
+#intro_vid {
+  width: 32.2dvh;
+  height: auto;
+  position: absolute;
+  top: 34.5dvh;
+  left: 6dvh;
+  border-radius: 2dvh;
+}

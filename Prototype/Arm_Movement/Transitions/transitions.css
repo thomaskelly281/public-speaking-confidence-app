@@ -8,7 +8,7 @@
   position: absolute;
   top: 50dvh;
   left: 19dvh;
-  height: 7dvh;
+  height: 10dvh;
 }
 
 .transition_1 {
@@ -17,19 +17,19 @@
 
 @keyframes transition_1 {
   0% {
-    left: 19dvh;
+    left: 17.5dvh;
   }
   20% {
-    left: 19dvh;
+    left: 17.5dvh;
   }
   55% {
-    left: -145dvh;
+    left: -115dvh;
   }
   65% {
-    left: -145dvh;
+    left: -115dvh;
   }
   100% {
-    left: 19dvh;
+    left: 17.5dvh;
   }
 }
 
@@ -156,13 +156,13 @@
 
 @keyframes transition_2 {
   0% {
-    left: 19dvh;
+    left: 17.5dvh;
   }
   60% {
-    left: 19dvh;
+    left: 17.5dvh;
   }
   100% {
-    left: -35.5dvh;
+    left: -26.3dvh;
   }
 }
 
@@ -212,13 +212,13 @@
 
 @keyframes transition_3 {
   0% {
-    left: -35.5dvh;
+    left: -26.3dvh;
   }
   60% {
-    left: -35.5dvh;
+    left: -26.3dvh;
   }
   100% {
-    left: -90.8dvh;
+    left: -70.5dvh;
   }
 }
 
@@ -228,13 +228,13 @@
 
 @keyframes transition_4 {
   0% {
-    left: -90.8dvh;
+    left: -70.5dvh;
   }
   60% {
-    left: -90.8dvh;
+    left: -70.5dvh;
   }
   100% {
-    left: -146.6dvh;
+    left: -115dvh;
   }
 }
 
@@ -244,13 +244,13 @@
 
 @keyframes transition_5 {
   0% {
-    left: -146.6dvh;
+    left: -115dvh;
   }
   20% {
-    left: -146.6dvh;
+    left: -115dvh;
   }
   100% {
-    left: 19dvh;
+    left: 17.5dvh;
   }
 }
 

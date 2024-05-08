@@ -105,8 +105,8 @@ function drawBox() {
 }
 
 function isPointInBox(pointX, pointY) {
-    return pointX >= box.x && pointX <= (box.x + box.width) && 
-           pointY >= box.y && pointY <= (box.y + box.height);
+    return pointX >= box.x && pointX <= (box.x + box.width) &&
+        pointY >= box.y && pointY <= (box.y + box.height);
 }
 
 // Global flag to determine the color state
@@ -132,7 +132,7 @@ let greenTime = 0;
 let orangeTime = 0;
 
 // Assuming 60 FPS for the animation, this will increment the time by approximately 16.67 milliseconds per frame.
-let incrementTime = 1000 / 60; 
+let incrementTime = 1000 / 60;
 
 
 function drawGlowingEllipse(x, y, radius, isInBox) {
@@ -140,19 +140,12 @@ function drawGlowingEllipse(x, y, radius, isInBox) {
     let color;
 
     if (colorState) {
-        // greenBox.style.backgroundColor = 'rgba(255,0,0,0.3)'
-        // redBox.style.backgroundColor = 'rgba(0,255,0,0.3)'
-        // greenBox.style.border = 'dashed 10px red'
-        // redBox.style.border = 'dashed 10px green'
-        
-
         purpleBox.style.backgroundColor = "#b397ffad";
         purpleBox.style.border = '0.5dvh solid #700ef0'
 
         purpleBoxLabel.style.border = '0.5dvh solid #700ef0';
 
         purpleBoxLabelP.innerHTML = "In.";
-
 
         color = isInBox ? '#b397ff' : '#FFA500'; // Green inside, orange outside
 
@@ -165,19 +158,11 @@ function drawGlowingEllipse(x, y, radius, isInBox) {
         }
 
     } else {
-        // greenBox.style.backgroundColor = 'rgba(0,255,0,0.3)'
-        // redBox.style.backgroundColor = 'rgba(255,0,0,0.3)'
-        // greenBox.style.border = 'dashed 10px green'
-        // redBox.style.border = 'dashed 10px red'
         purpleBox.style.backgroundColor = "#e13800b1";
         purpleBox.style.border = '0.5dvh solid #FF7C51'
-
         purpleBoxLabel.style.border = '0.5dvh solid #FF7C51'
-
         purpleBoxLabelP.innerHTML = "Out.";
 
-
-        
         color = isInBox ? '#FFA500' : '#b397ff'; // Orange inside, green outside
 
         if (isInBox) {
@@ -199,13 +184,13 @@ function drawGlowingEllipse(x, y, radius, isInBox) {
 
 function updateProgressBar(greenTime) {
     let progressBar = document.getElementById('progressBar');
-        let maxTime = 20000; // 20 seconds in milliseconds
-        let width = Math.min(100, (greenTime / maxTime) * 100); // Calculate width percentage
-        progressBar.style.width = width + '%'; // Update the width of the progress bar
+    let maxTime = 20000; // 20 seconds in milliseconds
+    let width = Math.min(100, (greenTime / maxTime) * 100); // Calculate width percentage
+    progressBar.style.width = width + '%'; // Update the width of the progress bar
 
-        if (progressBar.style.width === "100%") {
-            window.location.replace("bounding_box_complete.html");
-        }
+    if (progressBar.style.width === "100%") {
+        window.location.replace("bounding_box_complete.html");
+    }
 }
 
 
@@ -269,7 +254,7 @@ window.addEventListener('resize', setup);
 // Start the animation
 requestAnimationFrame(animateEllipses);
 
-videoElement.addEventListener('loadedmetadata', function() {
+videoElement.addEventListener('loadedmetadata', function () {
     // These lines may be adjusted or removed depending on the desired behavior
     canvasElement.width = videoElement.videoWidth;
     canvasElement.height = videoElement.videoHeight;
