@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ball Control</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/activity-menus.css" />
+    <link rel="stylesheet" href="CSS/ball-control-easy.css" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/gqk5xed.css" />
+    <script type="module" src="JS/main.js"></script>
+    <!-- <script src="JS/ball-control-easy.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js"></script>
+  </head>
+  <body>
+    <!-- Left Section for Tasks & Prototype Controls -->
+    <section id="left-section">
+      <div id="task-box">
+        <h1>Task:</h1>
+      </div>
+      <a href="start-home.html" rel="noopener"
+        ><button id="reset-button">Reset Prototype.</button></a
+      >
+    </section>
+
+    <!-- Right Section (Aside) for QR Code to Mobile, or for Social Media Marketing -->
+    <aside id="right-section">
+      <div id="aside-box"></div>
+    </aside>
+
+    <!-- Main Screen -->
+    <main id="screen-prototype" class="container">
+      <img
+        src="Images/Hd-Nano-1.png"
+        alt="iPhone 15 Pro Bezel Mockup"
+        id="iphone-screen"
+      />
+      <div id="screen-items">
+        <div id="exit-screen">
+          <img src="Images/Exit Screen.png" alt="#" />
+          <a href="start-home.html" id="exit-yes-button" rel="noopener"
+            ><div></div
+          ></a>
+          <a href="#" id="exit-no-button" rel="noopener"><div></div></a>
+        </div>
+        <img
+          src="Images/ball-control-background.png"
+          alt="#"
+          id="background-img"
+        />
+        <div id="end-screen">
+          <img src="Images/Ball Control Ending Screen.png" alt="#" />
+          <a href="#" id="exit-button-ending" rel="noopener"><div></div></a>
+          <a href="ball-control-easy.html" id="retry-button" rel="noopener"
+            ><div></div
+          ></a>
+          <a href="start-home.html" id="home-button" rel="noopener"
+            ><div></div
+          ></a>
+          <a href="#" id="next-session-button" rel="noopener"><div></div></a>
+        </div>
+
+        <div id="progressBar"></div>
+
+        <a href="#" id="exit-button" rel="noopener"><div></div></a>
+
+        <div id="speech-box">
+          <div id="toBeLines">
+            <p class="line">
+              Read everything from now <span class="countdown">out loud!</span>
+            </p>
+
+            <p class="line goal"></p>
+            <p class="line">Starting in... <span class="countdown">3</span></p>
+            <p class="line">Starting in... <span class="countdown">2</span></p>
+            <p class="line">Starting in... <span class="countdown">1</span></p>
+            <p class="line countdown" style="text-align: center">GO</p>
+
+            <p class="line">To be, or not to be</p>
+            <p class="line">that is the question.</p>
+            <p class="line">Whether tis' nobler in the mind to suffer</p>
+            <p class="line">the slings and arrows of outrageous fortune</p>
+            <p class="line">Or to take arms against a sea of troubles</p>
+            <p class="line">And by opposing end them.</p>
+            <p class="line">To die—to sleep,</p>
+            <p class="line">No more; and by a sleep to say we end</p>
+            <p class="line">The heart-ache and the thousand natural shocks</p>
+            <p class="line">That flesh is heir to: 'tis a consummation</p>
+            <p class="line">Devoutly to be wish'd.</p>
+            <p class="line">To die, to sleep;</p>
+            <p class="line">
+              To sleep, perchance to dream—ay, there's the rub:
+            </p>
+            <p class="line">For in that sleep of death what dreams may come,</p>
+            <p class="line">When we have shuffled off this mortal coil,</p>
+            <p class="line">Must give us pause—there's the respect</p>
+            <p class="line">That makes calamity of so long life.</p>
+          </div>
+          <div id="weShallFightLines">
+            <p class="line">
+              Read everything from now <span class="countdown">out loud!</span>
+            </p>
+
+            <p class="line goal"></p>
+            <p class="line">Starting in... <span class="countdown">3</span></p>
+            <p class="line">Starting in... <span class="countdown">2</span></p>
+            <p class="line">Starting in... <span class="countdown">1</span></p>
+            <p class="line countdown" style="text-align: center">GO</p>
+
+            <p class="line">We shall go on to the end,</p>
+            <p class="line">we shall fight in France,</p>
+            <p class="line">we shall fight on the seas and oceans,</p>
+            <p class="line">we shall fight with growing confidence</p>
+
+            <p class="line">and growing strength in the air,</p>
+            <p class="line">we shall defend our Island,</p>
+            <p class="line">whatever the cost may be,</p>
+            <p class="line">we shall fight them on the beaches,</p>
+            <p class="line">we shall fight on the landing grounds.</p>
+            <p class="line">we shall fight in the fields and in the streets,</p>
+            <p class="line">we shall fight in the hills;</p>
+            <p class="line">we shall never surrender,</p>
+            <p class="line">and even if,</p>
+            <p class="line">which I do not for a moment believe,</p>
+            <p class="line">this Island or a large part of it were</p>
+            <p class="line">subjugated and starving,</p>
+            <p class="line">then our Empire beyond the seas,</p>
+            <p class="line">armed and guarded by the British Fleet,</p>
+            <p class="line">would carry on the struggle,</p>
+            <p class="line">until, in God’s good time,</p>
+            <p class="line">the New World, with all its power and might,</p>
+            <p class="line">steps forth to the rescue</p>
+            <p class="line">and the liberation of the old.</p>
+          </div>
+          <div id="navySealLines">
+            <p class="line">
+              Read everything from now <span class="countdown">out loud!</span>
+            </p>
+
+            <p class="line goal"></p>
+            <p class="line">Starting in... <span class="countdown">3</span></p>
+            <p class="line">Starting in... <span class="countdown">2</span></p>
+            <p class="line">Starting in... <span class="countdown">1</span></p>
+            <p class="line countdown" style="text-align: center">GO</p>
+
+            <p class="line">What the fuck did you just fucking say about me,</p>
+            <p class="line">you little bitch?</p>
+            <p class="line">I'll have you know I graduated top of my class</p>
+            <p class="line">in the Navy Seals, and I've been involved in...</p>
+            <p class="line">numerous secret raids on Al-Quaeda,</p>
+            <p class="line">and I have over 300 confirmed kills.</p>
+            <p class="line">I am trained in gorilla warfare and...</p>
+            <p class="line">
+              I’m the top sniper in the entire US armed forces.
+            </p>
+            <p class="line">You are nothing to me but just another target.</p>
+            <p class="line">I will take you the fuck out with precision...</p>
+            <p class="line">the likes of which has never been seen before...</p>
+            <p class="line">on this Earth, mark my fucking words.</p>
+          </div>
+        </div>
+
+        <div id="sketch-holder"></div>
+      </div>
+    </main>
+    <script>
+      // let progressBar = document.getElementById("progressBar");
+      // let endScreen = document.getElementById("end-screen");
+      // let exitButtonEnding = document.getElementById("exit-button-ending");
+      // let nextSessionButton = document.getElementById("next-session-button");
+      // let homeButton = document.getElementById("home-button");
+      // let retryButton = document.getElementById("retry-button");
+
+      // const exitButton = document.getElementById("exit-button");
+      // const exitScreen = document.getElementById("exit-screen");
+      // const exitYesButton = document.getElementById("exit-yes-button");
+      // const exitNoButton = document.getElementById("exit-no-button");
+
+      // exitButton.addEventListener("click", () => {
+      //   exitScreen.style.display = "block";
+      //   exitButton.style.display = "none";
+      //   replayIntroButton.style.display = "none";
+      //   speechButton.style.display = "none";
+      //   startButton.style.display = "none";
+      // });
+
+      // exitNoButton.addEventListener("click", () => {
+      //   exitScreen.style.display = "none";
+      //   exitButton.style.display = "block";
+      //   replayIntroButton.style.display = "block";
+      //   speechButton.style.display = "block";
+      //   startButton.style.display = "block";
+      // });
+
+      // // Put the correct speech on display
+      // const selectedSpeech = localStorage.getItem("speech");
+      // console.log(selectedSpeech);
+
+      // let delay = 0;
+      // if (selectedSpeech === '"To be, or not to be" -Willi...') {
+      //   const lines = document.querySelectorAll("#speech-box #toBeLines .line");
+
+      //   lines.forEach((line, index) => {
+      //     // Specify different durations for each line in milliseconds
+      //     const durations = [
+      //       3000,
+      //       4000,
+      //       1000,
+      //       1000,
+      //       1000,
+      //       1000,
+      //       2200,
+      //       1800,
+      //       3200,
+      //       2800,
+      //       3000,
+      //       2700,
+      //       2700,
+      //       3000,
+      //       3000,
+      //       3000,
+      //       2400,
+      //       3000,
+      //       3500,
+      //       3500,
+      //       3000,
+      //       3000,
+      //       4000,
+      //     ];
+
+      //     setTimeout(() => {
+      //       // Before showing the current line, hide all previous lines
+      //       if (index > 0) {
+      //         lines[index - 1].style.display = "none"; // Hide the previous line
+      //       }
+      //       line.style.display = "block"; // Show the current line
+      //       animateProgressBar(durations[index]);
+      //     }, delay);
+
+      //     // Update the delay for the next line
+      //     delay += durations[index];
+      //   });
+
+      //   // Optionally, hide the last line after its duration
+      //   setTimeout(() => {
+      //     lines[lines.length - 1].style.display = "none";
+
+      //     endScreen.style.display = "block";
+
+      //     if (endScreen.style.display === "block") {
+      //       localStorage.setItem("ballControlStatus", "Complete");
+      //     }
+
+      //     exitButtonEnding.addEventListener("click", () => {
+      //       exitScreen.style.display = "block";
+      //       exitButton.style.display = "none";
+      //       replayIntroButton.style.display = "none";
+      //       speechButton.style.display = "none";
+      //       startButton.style.display = "none";
+      //     });
+      //   }, delay);
+      // } else if (selectedSpeech === '"We shall fight them on t..."') {
+      //   const lines = document.querySelectorAll(
+      //     "#speech-box #weShallFightLines .line"
+      //   );
+
+      //   lines.forEach((line, index) => {
+      //     // Specify different durations for each line in milliseconds
+      //     const durations = [
+      //       3000,
+      //       4000,
+      //       1000,
+      //       1000,
+      //       1000,
+      //       1000,
+      //       2400,
+      //       2300,
+      //       2400,
+      //       2300,
+      //       2300,
+      //       2300,
+      //       2000,
+      //       2200,
+      //       2500,
+      //       2400,
+      //       2500,
+      //       2600,
+      //       1800,
+      //       2600,
+      //       2800,
+      //       1800,
+      //       2700,
+      //       2300,
+      //       2500,
+      //       2300,
+      //       2600,
+      //       2500,
+      //       3000,
+      //     ];
+      //     setTimeout(() => {
+      //       // Before showing the current line, hide all previous lines
+      //       if (index > 0) {
+      //         lines[index - 1].style.display = "none"; // Hide the previous line
+      //       }
+      //       line.style.display = "block"; // Show the current line
+      //       animateProgressBar(durations[index]);
+      //     }, delay);
+
+      //     // Update the delay for the next line
+      //     delay += durations[index];
+      //   });
+
+      //   // Optionally, hide the last line after its duration
+      //   setTimeout(() => {
+      //     lines[lines.length - 1].style.display = "none";
+      //     endScreen.style.display = "block";
+
+      //     exitButtonEnding.addEventListener("click", () => {
+      //       exitScreen.style.display = "block";
+      //       exitButton.style.display = "none";
+      //       replayIntroButton.style.display = "none";
+      //       speechButton.style.display = "none";
+      //       startButton.style.display = "none";
+      //     });
+      //   }, delay);
+      // } else if (selectedSpeech === '"Navy Seal CopyPasta" -C...') {
+      //   const lines = document.querySelectorAll(
+      //     "#speech-box #navySealLines .line"
+      //   );
+
+      //   lines.forEach((line, index) => {
+      //     // Specify different durations for each line in milliseconds
+      //     const durations = [
+      //       3000,
+
+      //       4000,
+      //       1000,
+      //       1000,
+      //       1000,
+      //       1000,
+      //       2000,
+      //       1400,
+      //       2000, //class
+      //       2300,
+      //       2400, //Al-Queda
+      //       2700,
+      //       2600,
+      //       2500,
+      //       3000,
+      //       2500,
+      //       2500,
+      //       3000,
+      //     ];
+      //     setTimeout(() => {
+      //       // Before showing the current line, hide all previous lines
+      //       if (index > 0) {
+      //         lines[index - 1].style.display = "none"; // Hide the previous line
+      //       }
+      //       line.style.display = "block"; // Show the current line
+      //       progressBar.style.width = "0dvh";
+      //       animateProgressBar(durations[index]);
+      //     }, delay);
+
+      //     // Update the delay for the next line
+      //     delay += durations[index];
+      //   });
+
+      //   // Optionally, hide the last line after its duration
+      //   setTimeout(() => {
+      //     lines[lines.length - 1].style.display = "none";
+      //     endScreen.style.display = "block";
+
+      //     exitButtonEnding.addEventListener("click", () => {
+      //       exitScreen.style.display = "block";
+      //       exitButton.style.display = "none";
+      //       replayIntroButton.style.display = "none";
+      //       speechButton.style.display = "none";
+      //       startButton.style.display = "none";
+      //     });
+      //   }, delay);
+      // }
+
+      // function animateProgressBar(duration) {
+      //   // Remove transition to immediately reset the progress bar
+      //   progressBar.style.transition = "none";
+      //   progressBar.style.width = "0%"; // Immediately reset the progress bar width to 0%
+
+      //   // Use a slight delay before starting the animation to ensure the reset happens first
+      //   setTimeout(() => {
+      //     progressBar.style.transition = `width ${duration}ms linear`; // Reapply the transition for smooth animation
+      //     progressBar.style.width = "100%"; // Start the animation to 100% width
+      //   }, 20); // Small delay to ensure the transition re-applies correctly
+      // }
+    </script>
+    <script>
+      // // p5.js
+      // let mic;
+      // let canvasHeight = 800;
+      // let canvasWidth = 95;
+      // let ballDiameter = 75;
+      // let currentY;
+      // let targetY;
+      // let sections = 8;
+      // let selectedSection;
+      // let sectionHeight;
+      // let micSens = 0.095;
+
+      // function setup() {
+      //   var canvas = createCanvas(canvasWidth, canvasHeight);
+      //   canvas.parent("sketch-holder");
+
+      //   mic = new p5.AudioIn();
+      //   mic.start();
+
+      //   // Set initial ball position
+      //   targetY = canvasHeight - 100; // Start 100 pixels above the bottom
+      //   currentY = targetY;
+
+      //   sectionHeight = height / sections;
+      //   // Select a random section, excluding the first one
+      //   // selectedSection = floor(random(1, sections));
+      //   // selectedSection = 0;
+      //   selectedSection = floor(random(2, 6));
+      //   print(selectedSection);
+      //   print(typeof selectedSection);
+
+      //   // const largeAudience = document.getElementById("#large-audience");
+      //   // const smallAudience = document.getElementById("#small-audience");
+      //   // const regularConversation = document.getElementById(
+      //   //   "#regular-conversation"
+      //   // );
+      //   // const quietConversation = document.getElementById(
+      //   //   "#quiet-conversation"
+      //   // );
+
+      //   // let goal = document.createElement("p");
+      //   let goal = document.getElementById("goal");
+      //   // Get the div element
+      //   let toBe = document.getElementById("toBeLines");
+      //   let weShallFight = document.getElementById("weShallFightLines");
+      //   let navySeal = document.getElementById("navySealLines");
+
+      //   setGoal(selectedSection);
+
+      //   frameRate(60);
+      // }
+
+      // function draw() {
+      //   background("#FAFAFA");
+
+      //   let vol = mic.getLevel();
+      //   targetY = map(vol, 0, micSens, height - 100, 0); // Adjust the range to account for the starting position
+      //   targetY = constrain(targetY, 100, height - ballDiameter);
+      //   currentY = lerp(currentY, targetY, 0.02); // Smoother movement
+
+      //   // Determine the ball's section
+      //   let ballSection = getBallSection(currentY);
+      //   noStroke();
+
+      //   // Check if the ball is within the selected section
+      //   if (ballSection === selectedSection) {
+      //     fill("orange"); // Default color
+      //     drawingContext.shadowBlur = 20; // Adjust the glow radius
+      //     drawingContext.shadowColor = "#e13700";
+      //   } else {
+      //     fill("#e13700"); // Default color
+      //     drawingContext.shadowBlur = 0; // Adjust the glow radius
+      //   }
+
+      //   ellipse(width / 2, currentY, ballDiameter, ballDiameter);
+      // }
+
+      // function getBallSection(yPosition) {
+      //   return floor(yPosition / sectionHeight);
+      // }
+
+      // function touchStarted() {
+      //   getAudioContext().resume(); // Ensure microphone access on mobile devices
+      // }
+
+      // function setGoal(selectedSection) {
+      //   let selectedSection1 = selectedSection;
+      //   let goals = document.querySelectorAll(".goal"); // Get all elements with the class 'goal'
+
+      //   let goalText = ""; // Initialize the variable to hold the goal text
+
+      //   // Determine the goal text based on the selected section
+      //   if (selectedSection1 <= 2.5 && selectedSection1 >= 1.5) {
+      //     goalText = "Goal: Project the ball as if to a large audience.";
+      //   } else if (selectedSection1 <= 3.5 && selectedSection1 >= 2.5) {
+      //     goalText = "Goal: Project the ball as if to a small audience.";
+      //   } else if (selectedSection1 <= 4.5 && selectedSection1 >= 3.5) {
+      //     goalText =
+      //       "Goal: Project the ball at the level of a regular conversation.";
+      //   } else if (selectedSection1 <= 5.5 && selectedSection1 >= 4.5) {
+      //     goalText =
+      //       "Goal: Project the ball at the level of a quiet conversation.";
+      //   } else {
+      //     console.log("not working");
+      //   }
+
+      //   // Apply the goal text to all matched elements
+      //   goals.forEach((goal) => {
+      //     goal.textContent = goalText;
+      //   });
+      // }
+    </script>
+  </body>
+  <script>
+    // const exitButton = document.getElementById("exit-button");
+    // const exitScreen = document.getElementById("exit-screen");
+    // const exitYesButton = document.getElementById("exit-yes-button");
+    // const exitNoButton = document.getElementById("exit-no-button");
+    // const exitButtonEnding = document.getElementById("exit-button-ending");
+
+    // exitButton.addEventListener("click", () => {
+    //   exitScreen.style.display = "block";
+    //   exitButton.style.display = "none";
+    //   replayIntroButton.style.display = "none";
+    //   speechButton.style.display = "none";
+    //   startButton.style.display = "none";
+    // });
+
+    // exitNoButton.addEventListener("click", () => {
+    //   exitScreen.style.display = "none";
+    //   exitButton.style.display = "block";
+    //   replayIntroButton.style.display = "block";
+    //   speechButton.style.display = "block";
+    //   startButton.style.display = "block";
+    // });
+
+    // exitButtonEnding.addEventListener("click", () => {
+    //   exitScreen.style.display = "block";
+    //   exitButton.style.display = "none";
+    //   replayIntroButton.style.display = "none";
+    //   speechButton.style.display = "none";
+    //   startButton.style.display = "none";
+    // });
+
+    // const resetButton = document.getElementById("reset-button");
+
+    // resetButton.addEventListener("click", () => {
+    //   localStorage.setItem("ballControlStatus", "Incomplete");
+    // });
+  </script>
+  <script src="JS/ball-control-easy.js"></script>
+</html>

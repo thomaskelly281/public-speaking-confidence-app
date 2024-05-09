@@ -11,3 +11,12 @@
   left: 6dvh;
   border-radius: 2dvh;
 }
+
+#explainer_vid {
+  width: 38.5dvh;
+    height: auto;
+    position: absolute;
+    top: 34.5dvh;
+    left: 3dvh;
+    border-radius: 2dvh;
+}
