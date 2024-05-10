@@ -15,4 +15,4 @@ By Downloading Files;
 
 ////////////////////////////////////////////////////////
 
-To view teh live version on the web, visit, www.recite.space
+To view the live version on the web, visit, www.recite.space
