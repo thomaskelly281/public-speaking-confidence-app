@@ -1,6 +1,10 @@
-
 ////////////////////////////////////////////////////////
-**To view these files...**
+Recite.space - Public speaking self-confidence improvement application.
+Author: Thomas Kelly
+Contact: thomaskelly281@gmail.com
+
+////////////////////
+**To view these files...**//////////////////////
 
 By Cloning;
 1. Clone Repository
