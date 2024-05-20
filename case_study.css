@@ -1,0 +1,123 @@
+
+#heading-section {
+    margin-top: 5dvh;
+}
+
+section {
+    margin-bottom: 10dvh;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.flexbox-ends-case-study {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* align-items: center; */
+    margin-bottom: 10dvh;
+}
+
+
+#research-section {
+    height: auto;
+}
+
+#research-section,
+#overview-section,
+#define-section,
+#concepting-section,
+#early-prototyping-section,
+#ui-changes-section,
+#evaluation-section {
+    margin-bottom: 20dvh;
+}
+
+.text-holder {
+    max-width: 40%;
+}
+
+.text-holder h3 {
+    margin-top: 4dvh;
+}
+
+.case_study figure img,
+.case_study figure figcaption {
+    width: 100%;
+}
+
+figure {
+    width: 40%;
+    margin: 0;
+}
+
+#concepting_figure {
+    width: 100%;
+    margin-top: 5dvh;
+}
+
+.insight-card {
+    width: calc(100%/7);
+    min-width: 10dvh;
+    padding: 2dvh;
+    border-radius: 1dvh;
+    height: clamp(250px, 20dvh,700px);
+    border: 0.3dvh solid #5c5c5c; 
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.insight-card h3 {
+    margin: 1dvh 0 0 0;
+}
+
+.insight-card p {
+    margin: 2dvh 0 0 0;
+}
+
+.insight-card:nth-child(even) {
+    transform: translateY(3dvh);
+}
+
+.insight-card:nth-child(1) {
+    filter: drop-shadow(0 0.5dvh #E13700); 
+}
+.insight-card:nth-child(2) {
+    filter: drop-shadow(0 0.5dvh #825CEF); 
+}
+.insight-card:nth-child(3) {
+    filter: drop-shadow(0 0.5dvh #16D77B); 
+}
+.insight-card:nth-child(4) {
+    filter: drop-shadow(0 0.5dvh #67B0E5); 
+}
+.insight-card:nth-child(5) {
+    filter: drop-shadow(0 0.5dvh #FF7C51); 
+}
+
+#activity_flow_case_study_div,
+#custom_journey_flow_case_study_div {
+    height: 70dvh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+#activity_flow_case_study,
+#custom_journey_flow_case_study {
+    height: 100%
+}
+
+/* #activity_flow_case_study_div {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+} */
+
+#activity_flow_holder,
+#custom_journey_flow_holder {
+    margin-bottom: 10dvh;
+}

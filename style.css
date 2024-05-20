@@ -4,71 +4,185 @@ body {
 }
 
 .container {
-  /* Container to centre the iPhone Mockup */
-  width: 99vw;
-  height: 98dvh;
-  padding-top: 1dvh;
-}
+  width: 70%;
+  min-width: 1000px;
+} 
 
 .flexbox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+}
+
+.flexbox-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.flexbox-ends {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
   align-content: stretch;
 }
 
+.flexbox-ends-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+
+.flexbox-ends-column {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+#logoImg {
+width: 200px;}
+
+main {
+  width: 100%;
+}
+
+.hero {
+  min-height: 70dvh;
+}
+
 h1 {
   font-family: "sofia-pro-soft", sans-serif;
-  color: #383838;
+  color: #1f1f1f;
   font-weight: 600;
-  font-size: 8dvh;
+  font-size: 5dvh;
   margin: 1dvh 0;
 }
 
 h2 {
   font-family: "sofia-pro-soft", sans-serif;
-  color: #383838;
-  font-weight: 400;
-  font-size: 2.4dvh;
+  color: #1f1f1f;
+  font-weight: 600;
+  font-size: 3dvh;
   margin: 1dvh 0;
 }
-.title_div {
-  margin-bottom: 16dvh;
+
+h3 {
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #1f1f1f;
+  font-weight: 600;
+  font-size: 1.6dvh;
+}
+
+p {
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #1f1f1f;
+  font-weight: 400;
+  font-size: 1.4dvh;
+}
+
+h4 {
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #989898;
+  font-weight: 400;
+  font-size: 1.4dvh;
+  margin: 0;
+}
+
+figcaption {
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #989898;
+  font-weight: 400;
+  font-size: 1dvh;
+}
+
+h5 {
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #1f1f1f;
+  font-weight: 400;
+  font-size: 2dvh;
+  margin: 1dvh 0;
+}
+
+
+.tab {
+  padding-left: 4dvh;
+}
+
+.nav-bar {
+  width: 100%;
+  min-height: 5dvh;
+  height: auto;
+  padding-top: 1dvh;
+  padding-bottom: 1dvh;
+}
+
+.nav-links{
+  width: auto;
+  min-width: 400px;
+}
+.nav-links a {
+margin: 0 0 0 2dvh;
+text-decoration: none;
+}
+
+.nav-links a:hover h3{
+  text-decoration: underline;
+}
+
+#nav-contact-button {
+  padding: 0.7dvh 1.5dvh;
+  font-family: "sofia-pro-soft", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.8dvh;  
+  background-color: #363636;
+  border-radius: 1dvh;
+  filter: drop-shadow(0 0.5dvh #313131);
+  border: 0.3dvh solid #7f7f7f;
+}
+
+#nav-contact-button h3{
+  color: #ffffff;
+  margin: 0.5dvh;
+}
+
+.hero-text-holder {
+  min-height: 30dvh;
+  height: auto;
 }
 
 #prototype_button {
-  width: 40dvh;
-  border: 0.5dvh solid #5c5c5c;
-  height: 8dvh;
-  font-family: "sofia-pro-soft", sans-serif;
-  color: #383838;
-  font-weight: 600;
-  font-size: 2.2dvh;
+  min-width: 30dvh;
+  width: auto;
+  height: 7dvh;
   border-radius: 2dvh;
   filter: drop-shadow(0 0.5dvh #313131);
   background-color: #ffffff;
   border: 0.3dvh solid #5c5c5c;
-  margin-bottom: 5dvh;
+  margin-top: 5dvh;
 }
 
-#prototype_button:hover,
-#case_study_button:hover {
-  transform: scale(1.1);
+#prototype_button:hover {
+  filter: drop-shadow(0.3dvh 0.8dvh #313131);
+  border: 0.5dvh solid #5c5c5c;
   transition: 0.2s ease-in-out;
 }
 
-#case_study_button {
-  width: 34dvh;
-  height: 8dvh;
+button:hover,
+a:hover {
+  cursor: pointer;
+} 
 
-  font-family: "sofia-pro-soft", sans-serif;
-  color: #ffffff;
-  background-color: #363636;
-  font-weight: 600;
-  font-size: 2.2dvh;
-  border-radius: 2dvh;
-  filter: drop-shadow(0 0.5dvh #313131);
-  border: 0.3dvh solid #7f7f7f;
-}

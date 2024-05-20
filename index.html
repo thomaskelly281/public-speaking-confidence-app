@@ -12,29 +12,45 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/gqk5xed.css" />
 
-    <script type="module" src="redirect.js"></script>
+    <!-- <script type="module" src="redirect.js"></script> -->
   </head>
   <body>
-    <section class="container flexbox">
-      <div class="title_div flexbox">
-        <h1>Recite.</h1>
-        <h2>The public speaking self-confidence improvement application.</h2>
+    <!-- Nav -->
+    <nav class="nav-bar flexbox">
+      <div class="container flexbox-ends">
+        <a href="index.html"
+          ><img
+            src="/Assets/Images/Logo.png"
+            alt="Recite Logo"
+            rel="noopener"
+            id="logoImg"
+        /></a>
+        <div class="nav-links flexbox-ends">
+          <a href="" rel="noopener"><h3>About Us.</h3></a>
+          <a href="case_study.html" rel="noopener"><h3>Case Study.</h3></a>
+          <a href=""
+            ><button id="nav-contact-button"><h3>Contact Us.</h3></button></a
+          >
+        </div>
       </div>
-      <button onclick="prototype()" class="flexbox" id="prototype_button">
-        Try Prototype.
-      </button>
-      <button onclick="caseStudy()" class="flexbox" id="case_study_button">
-        Case Study.
-      </button>
-    </section>
-    <!-- <aside>
-        <h3></h3>
-        <h4></h4>
-        <form action="mailto">
-            <input type="email">
-            <button>
-            </button>
-        </form>
-    </aside> -->
+    </nav>
+
+    <!-- Content -->
+    <main class="flexbox">
+      <section class="hero container flexbox-center">
+        <div class="hero-text-holder flexbox-ends-column">
+          <div>
+            <h1>From Stage Fright To Spotlight.</h1>
+            <h5>
+              The public speaking self-confidence improvement mobile
+              application.
+            </h5>
+          </div>
+          <a href="/Prototype/Main/index.html" rel="noopener" target="_blank"
+            ><button id="prototype_button"><h3>Try Prototype.</h3></button></a
+          >
+        </div>
+      </section>
+    </main>
   </body>
 </html>
