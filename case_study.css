@@ -14,21 +14,21 @@ h2 {
 aside {
     position: absolute;
     top: 13dvh;
-    left: 0;
+    right: 0;
 }
 
 aside button {
     max-width: 10vw;
-    margin-left: 2vw;
+    margin-right: 2vw;
     margin-top: 1dvh;
     color: #ffffff;
 
     height: auto;
     min-height: 5dvh;
-    background-color: #434343;
+    background-color: #686868;
     border-radius: 1dvh;
-    filter: drop-shadow(0 0.5dvh #313131);
-    border: 0.3dvh solid #7f7f7f;
+    filter: drop-shadow(0 0.5dvh #454545);
+    border: 0.3dvh solid #a2a2a2;
     
     padding: 0 2dvh;
     position: relative;
