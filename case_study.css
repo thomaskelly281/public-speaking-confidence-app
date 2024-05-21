@@ -121,3 +121,31 @@ figure {
 #custom_journey_flow_holder {
     margin-bottom: 10dvh;
 }
+
+.scroll-arrow {
+    position: absolute;
+    height: 3dvh;
+    width: 4dvh;
+    right: -8dvh;
+    top: 48%;
+    animation: hori-scroll 3s infinite ease-in-out;
+}
+
+@keyframes hori-scroll {
+    0% {
+        opacity: 0.4;
+        right: -6dvh;
+    }
+    40% {
+        opacity: 1;
+        right: -8dvh;
+    }
+    60% {
+        opacity: 1;
+        right: -8dvh;
+    }
+    100% {
+        opacity: 0.4;
+        right: -6dvh;
+    }
+}
