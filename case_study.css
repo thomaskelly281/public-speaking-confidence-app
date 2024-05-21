@@ -11,6 +11,45 @@ h2 {
     margin-top: 0;
 }
 
+aside {
+    position: absolute;
+    top: 13dvh;
+    left: 0;
+}
+
+aside button {
+    max-width: 10vw;
+    margin-left: 2vw;
+    margin-top: 1dvh;
+    color: #ffffff;
+
+    height: auto;
+    min-height: 5dvh;
+    background-color: #434343;
+    border-radius: 1dvh;
+    filter: drop-shadow(0 0.5dvh #313131);
+    border: 0.3dvh solid #7f7f7f;
+    
+    padding: 0 2dvh;
+    position: relative;
+}
+
+aside button:hover {
+    text-decoration: underline;
+}
+
+/* aside button img {
+    width: 0.6dvh;
+    height: 0.6dvh;
+} */
+
+#new-tab-icon {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+}
+
 .flexbox-ends-case-study {
     display: flex;
     flex-direction: row;
@@ -34,6 +73,10 @@ h2 {
 #ui-changes-section,
 #evaluation-section {
     margin-bottom: 20dvh;
+}
+
+#define-section {
+    margin-top: 10dvh;
 }
 
 .text-holder {
@@ -68,6 +111,7 @@ figure {
     border: 0.3dvh solid #5c5c5c; 
     background-color: #fff;
     overflow: hidden;
+    animation: 1s ease-in-out;
 }
 
 .insight-card h3 {
@@ -85,17 +129,32 @@ figure {
 .insight-card:nth-child(1) {
     filter: drop-shadow(0 0.5dvh #E13700); 
 }
+.insight-card:nth-child(1):hover {
+    filter: drop-shadow(0 1.5dvh #E13700); 
+}
 .insight-card:nth-child(2) {
     filter: drop-shadow(0 0.5dvh #825CEF); 
+}
+.insight-card:nth-child(2):hover {
+    filter: drop-shadow(0 1.5dvh #825CEF); 
 }
 .insight-card:nth-child(3) {
     filter: drop-shadow(0 0.5dvh #16D77B); 
 }
+.insight-card:nth-child(3):hover {
+    filter: drop-shadow(0 1.5dvh #16D77B); 
+}
 .insight-card:nth-child(4) {
     filter: drop-shadow(0 0.5dvh #67B0E5); 
 }
+.insight-card:nth-child(4):hover {
+    filter: drop-shadow(0 1.5dvh #67B0E5); 
+}
 .insight-card:nth-child(5) {
     filter: drop-shadow(0 0.5dvh #FF7C51); 
+}
+.insight-card:nth-child(5):hover {
+    filter: drop-shadow(0 1.5dvh #FF7C51); 
 }
 
 #activity_flow_case_study_div,
@@ -147,5 +206,12 @@ figure {
     100% {
         opacity: 0.4;
         right: -6dvh;
+    }
+}
+
+
+@media only screen and (max-width: 1600px) {
+    aside button{
+        display: none;
     }
 }

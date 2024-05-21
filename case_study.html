@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="case_study.css" />
 
     <link rel="stylesheet" href="https://use.typekit.net/gqk5xed.css" />
+
   </head>
   <body>
     <!-- Nav -->
@@ -34,6 +35,30 @@
         </div>
       </div>
     </nav>
+
+    <aside>
+        <div class="flexbox-ends-column">
+            <button id="transcription-button" onclick="playAudio()">
+                <div class="flexbox-ends">
+                    <img src="/Assets/Images/sound-icon.svg" alt="Sound Icon">
+                    <p style="color: #ffffff; margin-left: 1dvh;"><strong>Read Aloud.</strong> (10 mins)</p>
+                    <audio src="/Assets/Images/Recite_case_study_audio.mp3" id="audioTranscription"></audio>
+                </div>
+            </button>
+            <button id="stop-transcription-button" onclick="stopAudio()">
+                <div class="flexbox-ends">
+                    <div style="width: 1dvh; height: 1dvh; background-color: white;"></div>
+                    <p style="color: #ffffff; margin-left: 1dvh;"><strong>Stop Audio.</strong></p>
+                </div>
+            </button>
+            <a href="/Assets/Images/Design_Rationale_Recite.pdf" target="_blank" rel="noopener" title="Open Design Rationale Document" aria-label="Open Design Rationale Document">
+                <button id="rationale-button">
+                    <img src="/Assets/Images/new-tab-icon.svg" alt="Opens new tab" id="new-tab-icon">
+                    <p style="color: #ffffff;"><strong>Open Rationale Document.</strong> (170 pages)</p>
+                </button>
+            </a>
+       </div>
+    </aside>
 
     <!-- Content -->
     <main class="flexbox case_study">
@@ -82,7 +107,7 @@
               <div>
                 <h3>Research Questions.</h3>
                 <p>
-                  For each question, defined from outset to provide research
+                  For each question, defined from the outset to provide research
                   direction, we provided a corresponding justification,
                   clarifying the rationale behind its formulation and
                   identifying potential sources for obtaining answers. This
@@ -162,7 +187,7 @@
               problems affecting users seen during the research phase. The
               personas were a student who has a physical reaction when public
               speaking (shaking, sweating), a recent design graduate who has
-              imposter syndrome in stakeholder meetings, and a best-man who is
+              imposter syndrome in stakeholder meetings, and a best man who is
               struggling with the idea of giving a speech in front of a crowd.
               <br />
               <br />
@@ -180,8 +205,8 @@
               <h3>Co-Design Workshop.</h3>
               <p>
                 Extracted from academic literature were the features of public
-                speaking significantly correlated with a good performance. In a
-                co-design workshop we tasked young, developing professionals and
+                speaking significantly correlated with good performance. In a
+                co-design workshop, we tasked young, developing professionals and
                 designers to create activities that could improve some of the
                 aforementioned features.
               </p>
@@ -216,16 +241,16 @@
           <div class="text-holder">
             <h2>Early Prototyping.</h2>
             <div>
-              <h3>Low Fidelity Prototypes.</h3>
+              <h3>Low-Fidelity Prototypes.</h3>
               <p>
-                The first prototypes created were low fidelity activities
+                The first prototypes created were low-fidelity activities
                 focussing on getting users to practice different features of
                 public speaking. The images you can see on the right are tasking
                 users with moving their arms and keeping their arms up.
                 <br />
                 <br />
                 The activity prototypes created were decided upon from an
-                extensive list which was made into an impact over effort matrix.
+                extensive list which was made into an impact-over-effort matrix.
               </p>
             </div>
             <div>
@@ -296,7 +321,7 @@
                   A strict evaluation testing method using a control, and other
                   public speaking practice methods, we determined that the use
                   of this prototype of Recite deemed to be comparable, to
-                  observers, to practicing a speech using memory and repetition
+                  observers, to practising a speech using memory and repetition
                   of the speech for an equal amount of time. This was
                   confirmation of Recite moving in the direction of being a more
                   fun, enjoyable replacement to practicing public speaking with
@@ -319,20 +344,10 @@
               <div>
                 <h3 style="margin-top: 0">Prototype 3.</h3>
                 <p>
-                  With findings extracted from a SWOT analysis of EdTech
-                  previously mentioned in the research phase section, Prototype
-                  3 used a journey approach to activities. Offering users a set
-                  of activities all working to progress a feature of their
-                  public speaking. Each activity building on the previous to
-                  improve user’s ability and confidence in themself over time.
+                    With findings extracted from a SWOT analysis of EdTech previously mentioned in the research phase section, Prototype 3 used a journey approach to activities. Offering users a set of activities all working to progress a feature of their public speaking. Each activity building on the previous one to improve the user’s ability and confidence in themself over time.
                   <br />
                   <br />
-                  A heuristic evaluation and UI feedback session was conducted
-                  on Prototype 3, users and designers gave input on screen flows
-                  of the prototype and tested its interactions. A lack of user
-                  control was found. User’s felt as though they were rushed
-                  through activities. Given that reflection important in
-                  self-improvement, this was to be addressed.
+                  A heuristic evaluation and UI feedback session was conducted on Prototype 3, users and designers gave input on screen flows of the prototype and tested its interactions. A lack of user control was found. Users felt as though they were rushed through activities. Given that reflection is important in self-improvement, this was to be addressed.
                 </p>
               </div>
             </div>
@@ -355,17 +370,10 @@
               <div>
                 <h3>The Product.</h3>
                 <p>
-                  The final prototype for Recite, up to May 18th, 2024, is a
-                  public speaking self-confidence improving mobile application
-                  currently hosted as a web-app. It brings users though a
-                  path-style navigation, improving public speaking features
-                  through repetition and gradual progression.
+                    The final prototype for Recite, up to May 18th, 2024, is a public speaking self-confidence-improving mobile application currently hosted as a web app. It brings users through path-style navigation, improving public speaking features through repetition and gradual progression.
                   <br />
                   <br />
-                  Five fully developed activities are featured. Four of which
-                  focus on arm movement, demonstrating an activity session. The
-                  remaining activity focusses on vocal projection, this activity
-                  was developed since Prototype 1.
+                  Five fully developed activities are featured. Four of these focus on arm movement, demonstrating an activity session. The remaining activity focuses on vocal projection, this activity was developed since Prototype 1.
                 </p>
               </div>
             </div>
@@ -419,7 +427,7 @@
                 not just general improvement. A question flow gathers
                 information about the user’s current situation, and wants, then
                 provides a custom journey for them based on their answers. This
-                feature was a frequent request from user’s in testing.
+                feature was a frequent request from users in testing.
               </p>
             </div>
           </div>
@@ -443,7 +451,7 @@
             <div>
               <h3>Ball Control.</h3>
               <p>
-                Ball control, the vocal projection activity iterated upon since the first interactive prototype, received changes in text size, making it larger for user’s to see. The background colour of this activity now changes depending if the user has the right or wrong level of vocal projection. This change allows users to focus on the text being displayed rather than having to glance at the level of the ball. The user is more aware of their positioning and progression.
+                Ball control, the vocal projection activity iterated upon since the first interactive prototype, received changes in text size, making it larger for users to see. The background colour of this activity now changes depending if the user has the right or wrong level of vocal projection. This change allows users to focus on the text being displayed rather than having to glance at the level of the ball. The user is more aware of their positioning and progression.
               </p>
             </div>
           </div>
@@ -484,7 +492,7 @@
                 Recite’s code adheres to the WCAG 2.0 (AA) standard. Also, Recite implements ARIA roles and labels for tags throughout its code. The UI has an ‘AAA’ contrast rating on all elements except for stylistic text, which is not necessary for any form of progression.
                 <br>
                 <br>
-                Multiple accessibility standards and consideration are to be amended in future, such as the ability to skip activity sessions for users who are unable to complete it due to disability.
+                Multiple accessibility standards and considerations are to be amended in future, such as the ability to skip activity sessions for users who are unable to complete it due to disability.
               </p>
             </div>
           </div>
@@ -509,7 +517,7 @@
             <div>
               <h3>Focus Groups.</h3>
               <p>
-                Focus groups were used to identify any problems or confusion around the activity flows. From these groups we were able to identify what users generally liked and disliked about the application, and were able to define what could be redesigned in future.              </p>
+                Focus groups were used to identify any problems or confusion around the activity flows. From these groups, we were able to identify what users generally liked and disliked about the application, and were able to define what could be redesigned in future.              </p>
             </div>
           </div>
           <figure>
@@ -537,7 +545,7 @@
             <div>
               <h3 style="margin-top: 0">Observations.</h3>
               <p>
-                The goal of Recite was to improve the public speaking self-confidence of young developing professionals by being enjoyable and interactive. Throughout the design and development process, young, developing professionals requested to use the product and can be seen smiling, and engaging with the activities in Recite. This was both when unobserved and observed by multiple people. These observations show that with a change in perception of public speaking, young, developing professionals can find public speaking non-intimidating and can enjoy themselves whilst practicing for it.
+                The goal of Recite was to improve the public speaking self-confidence of young developing professionals by being enjoyable and interactive. Throughout the design and development process, young, developing professionals requested to use the product and can be seen smiling and engaging with the activities in Recite. This was both when unobserved and observed by multiple people. These observations show that with a change in perception of public speaking, young, developing professionals can find public speaking non-intimidating and can enjoy themselves whilst practising it.
               </p>
             </div>
           </div>
@@ -554,4 +562,26 @@
       </section>
     </main>
   </body>
+
+  <script>
+
+    const audioButton = document.getElementById("transcription-button");
+    const stopAudioButton = document.getElementById("stop-transcription-button");
+    var audio = document.getElementById("audioTranscription");
+
+
+    stopAudioButton.style.display = "none";
+
+     function playAudio() {
+        audio.play();
+        stopAudioButton.style.display = "block";
+        audioButton.style.display = "none";
+      }
+
+      function stopAudio() {
+        audio.pause();
+        stopAudioButton.style.display = "none";
+        audioButton.style.display = "block";
+      }
+  </script>
 </html>
