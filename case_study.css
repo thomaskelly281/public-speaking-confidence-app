@@ -209,6 +209,12 @@ figure {
     }
 }
 
+#case-study-footer {
+    width: 100%;
+    background-color: #363636;
+    margin-top: 3dvh;
+  }
+
 
 @media only screen and (max-width: 1600px) {
     aside button{
