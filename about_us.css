@@ -1,0 +1,47 @@
+
+.flex-ends-column {
+    align-items: flex-start;
+}
+
+main .flexbox-ends {
+    align-items: flex-start;
+}
+
+main {
+    margin-top: 10dvh;
+    min-height: 75dvh;
+}
+
+#about-us-footer {
+    width: 100%;
+    background-color: #363636;
+    margin-top: 3dvh;
+  }
+
+
+#about_us_img {
+    width: auto;
+    max-height: 50dvh;
+}
+
+.hero-text-holder p {
+    max-width: 500px;
+}
+
+@media only screen and (max-width: 1100px) {
+    main {
+        margin-top: 5dvh;
+    }
+
+    #about_us_img {
+        width: 62vw;
+        height: 62vw;
+        margin-top: 5dvh;
+    }
+
+    #about-us-footer {
+        position: absolute;
+        bottom: -16dvh;
+        /* position: relative; */
+    }
+}
