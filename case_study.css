@@ -215,3 +215,76 @@ figure {
         display: none;
     }
 }
+
+
+@media only screen and (max-width: 1100px) {
+    main .flexbox,
+    main .flexbox-ends-case-study,
+    main .flexbox-center,
+    main .flexbox-ends {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #heading-section,
+    #concepting-section,
+    #research-section,
+    #activity_flow_holder:not(.flow-holder),
+    #custom_journey_flow_holder:not(.flow-holder){
+        display: flex;
+        flex-wrap: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #activity_flow_case_study {
+        position: absolute;
+        left: 0;
+
+    }
+
+    .scroll-arrow {
+        display: none;
+    }
+
+    .flow-holder {
+        width: 90vw;
+        overflow: scroll;
+    }
+
+
+    .insight-cards {
+        /* margin-left: 5vw; */
+        flex-wrap: wrap;
+        /* align-items: flex-start; */
+        /* flex-direction: column; */
+        max-width: 90vw;
+        justify-content: center;
+
+    }
+
+    .insight-card {
+        min-width: 15vw;
+        min-height: 6dvh;
+        height: auto;
+        padding-bottom: 3dvh;
+        margin-bottom: 5dvh;
+        margin: 1dvh;
+    }
+
+    .insight-card:nth-child(even) {
+        transform: none;
+    }
+
+    #concepting_figure figcaption {
+        display: none;
+    }
+
+   
+    h1 {
+        font-size: 2rem;
+      }
+
+}

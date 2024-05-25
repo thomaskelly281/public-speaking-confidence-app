@@ -116,9 +116,17 @@ h5 {
   margin: 1dvh 0;
 }
 
+#logoMark {
+  display: none;
+}
+
 
 .tab {
   padding-left: 4dvh;
+}
+
+nav .container {
+  padding-top: 1dvh;
 }
 
 .nav-bar {
@@ -186,3 +194,29 @@ a:hover {
   cursor: pointer;
 } 
 
+@media only screen and (max-width: 1100px) {
+
+  nav .container {
+    min-width: 0;
+  }
+
+  #logoMark {
+    display: block;
+    width: 40px;
+    height: auto;
+  }
+
+  nav .container {
+    padding-top: 1dvh;
+    width: 90vw;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #logoImg {
+    display: none;
+  }
+
+}

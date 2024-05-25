@@ -20,13 +20,18 @@
     <!-- Nav -->
     <nav class="nav-bar flexbox">
       <div class="container flexbox-ends">
-        <a href="index.html"
+        <a href="index.html" rel="noopener"
+
           ><img
             src="/Assets/Images/Logo.png"
             alt="Recite Logo"
-            rel="noopener"
             id="logoImg"
-        /></a>
+        />
+        <img
+        src="/Assets/Images/LogoMark.png"
+        alt="Recite Logo"
+        id="logoMark"
+      /></a>
         <div class="nav-links flexbox-ends">
           <a href="" rel="noopener"><h3>About Us.</h3></a>
           <a href="case_study.html" rel="noopener"><h3>Case Study.</h3></a>
@@ -130,7 +135,7 @@
             </figure>
           </div>
 
-          <div class="flexbox-ends-wrap">
+          <div class="flexbox-ends-wrap insight-cards">
             <div class="insight-card" id="card">
               <h3>Insight.</h3>
               <h4>From Literature.</h4>
@@ -406,15 +411,15 @@
             </div>
           </div>
 
-          <div style="position: relative;">
-          <div id="activity_flow_case_study_div">
-            <img
-              src="/Assets/Images/activity_flow_case_study.jpg"
-              alt=""
-              id="activity_flow_case_study"
-            />
-          </div>
-          <img src="/Assets/Images/scroll-arrow.svg" alt="arrow prompting horizontal scrolling" class="scroll-arrow">
+          <div style="position: relative;" class="flow-holder">
+            <div id="activity_flow_case_study_div">
+              <img
+                src="/Assets/Images/activity_flow_case_study.jpg"
+                alt=""
+                id="activity_flow_case_study"
+              />
+            </div>
+            <img src="/Assets/Images/scroll-arrow.svg" alt="arrow prompting horizontal scrolling" class="scroll-arrow">
           </div>
         </div>
 
@@ -433,7 +438,7 @@
             </div>
           </div>
 
-          <div style="position: relative;">
+          <div style="position: relative;" class="flow-holder">
             <div id="custom_journey_flow_case_study_div">
                 <img
                 src="/Assets/Images/custom_journey_flow_case_study.jpg"
@@ -563,7 +568,6 @@
       </section>
     </main>
   </body>
-
   <script>
 
     const audioButton = document.getElementById("transcription-button");
